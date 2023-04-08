@@ -191,3 +191,6 @@ xnoremap <leader>v :GBrowse!<CR>
 " => onedark.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:onedark_terminal_italics=1
+
+"live grep
+nnoremap <leader>rg :Rg<space>

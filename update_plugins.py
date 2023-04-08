@@ -16,6 +16,7 @@ from os import path
 
 # --- Globals ----------------------------------------------
 PLUGINS = """
+vim-go https://github.com/fatih/vim-go
 fzf.vim https://github.com/junegunn/fzf.vim
 vim-polyglot https://github.com/sheerun/vim-polyglot
 onedark.vim https://github.com/joshdick/onedark.vim
