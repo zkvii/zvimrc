@@ -16,6 +16,11 @@ from os import path
 
 # --- Globals ----------------------------------------------
 PLUGINS = """
+ack.vim https://github.com/mileszs/ack.vim
+vim-startify https://github.com/mhinz/vim-startify
+vim-instant-markdown https://github.com/instant-markdown/vim-instant-markdown
+vim-markdown https://github.com/preservim/vim-markdown
+tabular https://github.com/godlygeek/tabular
 vim-go https://github.com/fatih/vim-go
 fzf.vim https://github.com/junegunn/fzf.vim
 vim-polyglot https://github.com/sheerun/vim-polyglot

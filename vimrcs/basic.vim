@@ -91,7 +91,7 @@ set cmdheight=1
 
 " A buffer becomes hidden when it is abandoned
 set hid
-
+set fillchars+=vert:\ 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
@@ -201,6 +201,11 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+"""""""""""""""
+"insert quick exit
+"""""""""""""""
+inoremap jj <Esc>
+inoremap jk <Esc>
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
