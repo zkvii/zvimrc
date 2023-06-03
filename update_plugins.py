@@ -16,6 +16,7 @@ from os import path
 
 # --- Globals ----------------------------------------------
 PLUGINS = """
+jedi-vim https://github.com/davidhalter/jedi-vim
 ack.vim https://github.com/mileszs/ack.vim
 vim-startify https://github.com/mhinz/vim-startify
 vim-instant-markdown https://github.com/instant-markdown/vim-instant-markdown

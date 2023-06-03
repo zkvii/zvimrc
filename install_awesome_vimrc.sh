@@ -1,12 +1,13 @@
 #!/bin/sh
-set -e
 
 cd ~/.vim_runtime
 #  init environ string
 environ=''
+repo_url="https://github.com/junegunn/fzf.git"
+repo_dir="~/.fzf"
 #  install addons
 # if current os is macos
-if [ "$(uname)" == "Darwin" ]; then
+if [[ "$(uname)" == "Darwin" ]]; then
   echo "installing addons for macos"
   # add fzf
   brew install fzf
@@ -18,8 +19,16 @@ if [ "$(uname)" == "Darwin" ]; then
 else
   echo "installing addons for linux"
   # add fzf
-  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  if [ ! -d "$repo_dir" ]; then
+    # 克隆仓库
+    git clone "$repo_url" "$repo_dir"
+    echo "仓库克隆成功！"
+  else
+      echo "仓库目录已存在，跳过克隆操作。"
+  fi
   ~/.fzf/install
+  echo "fzf installed"
+    # rmdir "$DIRECTORY"
   environ+="set rtp+=~/.fzf"
   curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
   sudo dpkg -i ripgrep_13.0.0_amd64.deb

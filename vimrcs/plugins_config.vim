@@ -193,8 +193,8 @@ xnoremap <leader>v :GBrowse!<CR>
 let g:onedark_terminal_italics=1
 
 "live grep
-nnoremap <leader>rg :Rg<space>
-nnoremap <leader>lg :Ag<space>
+noremap <leader>rg :Rg<space>
+noremap <leader>lg :Ag<space>
 
 "vim-startify
 let g:startify_change_to_dir = 1
@@ -207,3 +207,7 @@ let g:startify_session_delete_buffers = 1
 let g:startify_custom_header = [
 \ '         coding is nothing but fun',
 \ ' ',]
+"jedi-vim
+let g:jedi#completions_enabled = 1
+let g:jedi#auto_trigger_delay = 500
+let g:jedi#auto_trigger = 1
